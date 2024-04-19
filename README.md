@@ -5,4 +5,9 @@
 ## 4. php artisan migrate: fresh --seed
 ## 5. php artisan serve
 ## 6. npm run dev
+## ********************
+## DATOS PARA ACCEDER AL SISTEMA
+## ********************
+## correo:admin@gmail.com
+## contraseña:159753123
 
