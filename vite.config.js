@@ -10,13 +10,10 @@ export default defineConfig({
                 'resources/js/app.js',
             ],
             refresh: true,
-            assetUrl: (url) => url.startsWith('/') ? `https://user-management-production-d279.up.railway.app${url}` : url,
+            assetUrl: (url) => `//user-management-production-d279.up.railway.app${url}`,
         }),
     ],
     server: {
-        https: {
-          key: require('fs').readFileSync('./server.key'),
-          cert: require('fs').readFileSync('./server.cert')
-        },
+        https: true, // Habilita el servidor HTTPS
     },
 });
