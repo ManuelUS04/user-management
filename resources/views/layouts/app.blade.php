@@ -12,9 +12,11 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
+        @vite(['https://user-management-production-d279.up.railway.app/build/assets/app-BgnVSExX.css', 'https://user-management-production-d279.up.railway.app/build/assets/app-D2jpX1vH.js'])
 
-        
+
+
         <!-- Styles -->
         @livewireStyles
     </head>
