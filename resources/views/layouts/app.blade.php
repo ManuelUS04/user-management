@@ -13,13 +13,15 @@
 
         <!-- Scripts -->
         <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
-        <!-- Styles -->
-        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
 
         <!-- Scripts -->
         <script src="{{ secure_asset('js/app.js') }}" defer></script>
 
         <!-- Styles -->
+        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+
+
+        <!-- Livewire Styles -->
         @livewireStyles
     </head>
     <body class="font-sans antialiased">
@@ -44,7 +46,8 @@
         </div>
 
         @stack('modals')
-
+        <!-- Livewire Scripts -->
+        <script src="{{ secure_asset('livewire/livewire.js') }}" data-csrf="{{ csrf_token() }}" data-update-uri="/livewire/update" data-navigate-once="true"></script>
         @livewireScripts
     </body>
 </html>
