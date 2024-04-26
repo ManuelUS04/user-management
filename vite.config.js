@@ -14,13 +14,4 @@ export default defineConfig({
     server: {
         https: true, // Habilita el servidor HTTPS
     },
-    build: {
-        publicDir: 'public', // Directorio público de compilación
-        manifest: true, // Genera un manifiesto de construcción
-        rollupOptions: {
-            input: {
-                main: './resources/js/app.js',
-            },
-        },
-    },
 });
