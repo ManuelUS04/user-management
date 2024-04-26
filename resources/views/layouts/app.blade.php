@@ -12,16 +12,9 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
-        <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
-
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js', true) }}" defer></script>
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Styles -->
-        <link href="{{ asset('css/app.css', true) }}" rel="stylesheet">
-
-
-        <!-- Livewire Styles -->
         @livewireStyles
     </head>
     <body class="font-sans antialiased">
@@ -46,8 +39,7 @@
         </div>
 
         @stack('modals')
-        <!-- Livewire Scripts -->
-        <script src="{{ asset('livewire/livewire.js', true) }}" data-csrf="{{ csrf_token() }}" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+
         @livewireScripts
     </body>
 </html>
