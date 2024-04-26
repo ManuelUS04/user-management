@@ -22,20 +22,6 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 
 /*
 |--------------------------------------------------------------------------
-| Force HTTPS
-|--------------------------------------------------------------------------
-|
-| If the request was originally made via HTTP, we'll redirect to the
-| HTTPS version of the site before starting the Laravel application.
-|
-*/
-
-if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'http') {
-    $_SERVER['HTTPS'] = 'on';
-}
-
-/*
-|--------------------------------------------------------------------------
 | Register The Auto Loader
 |--------------------------------------------------------------------------
 |
