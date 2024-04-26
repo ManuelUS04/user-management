@@ -10,9 +10,9 @@ export default defineConfig({
                 'resources/js/app.js',
             ],
             refresh: true,
+            assetUrl: (url) => url.startsWith('/') ? `https://user-management-production-d279.up.railway.app${url}` : url,
         }),
     ],
-    base: 'https://user-management-production-d279.up.railway.app/', // Cambia a HTTPS
     server: {
         https: true, // Habilita el servidor HTTPS
     },
