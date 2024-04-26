@@ -10,4 +10,11 @@
 [https]
   port = 8443 # Puerto HTTPS
 
-# Resto de tu configuración...
+# Redireccionamiento de HTTP a HTTPS
+[[services]]
+  internalPort = 8080
+  protocol = "http"
+
+[[services]]
+  internalPort = 8443
+  protocol = "https"
