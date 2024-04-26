@@ -10,5 +10,8 @@ export default defineConfig({
             ],
             refresh: true,
         }),
+        livewire({ 
+            refresh: ['resources/css/app.css'],
+          }),
     ],
 });
