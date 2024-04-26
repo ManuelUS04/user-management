@@ -1,0 +1,13 @@
+# Archivo railway.toml
+
+# Configuración para permitir el acceso HTTP y HTTPS
+[web]
+  port = 8080 # Puerto HTTP
+
+[http]
+  port = 8080 # Puerto HTTP
+
+[https]
+  port = 8443 # Puerto HTTPS
+
+# Resto de tu configuración...
