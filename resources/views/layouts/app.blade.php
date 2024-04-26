@@ -13,8 +13,12 @@
 
         <!-- Scripts -->
         <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
-        <link href="https://user-management-production-d279.up.railway.app/build/assets/app-BgnVSExX.css" rel="stylesheet" />
-        <link href="https://user-management-production-d279.up.railway.app/build/assets/app-D2jpX1vH.js" rel="stylesheet" />
+        <!-- Styles -->
+        <link href="{{ secure_asset('build/assets/app-BgnVSExX.css') }}" rel="stylesheet">
+
+        <!-- Scripts -->
+        <script src="{{ secure_asset('build/assets/app-D2jpX1vH.js') }}" defer></script>
+        
 
 
         <!-- Styles -->
