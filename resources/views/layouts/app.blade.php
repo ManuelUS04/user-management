@@ -13,8 +13,8 @@
 
         <!-- Scripts -->
         <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
-        @vite(['https://user-management-production-d279.up.railway.app/build/assets/app-BgnVSExX.css', 'https://user-management-production-d279.up.railway.app/build/assets/app-D2jpX1vH.js'])
-
+        <link href="https://user-management-production-d279.up.railway.app/build/assets/app-BgnVSExX.css" rel="stylesheet" />
+        <link href="https://user-management-production-d279.up.railway.app/build/assets/app-D2jpX1vH.js" rel="stylesheet" />
 
 
         <!-- Styles -->
