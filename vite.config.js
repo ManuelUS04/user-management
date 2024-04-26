@@ -7,6 +7,8 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
             ],
+            production: true,
+            minify: true,
             refresh: true,
         }),
     ],
