@@ -1,3 +1,4 @@
+// vite.config.js
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
@@ -11,6 +12,7 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    base: 'https://user-management-production-d279.up.railway.app/', // Cambia a HTTPS
     server: {
         https: true, // Habilita el servidor HTTPS
     },
